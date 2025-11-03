@@ -74,4 +74,115 @@
     }
 
     .card:hover {
-      transform: tra
+      transform: translateY(-6px);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .card h3 {
+      font-size: 1.25em;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      color: #c33764;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .card a:hover {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+    }
+
+    /* 📱 Mobile Optimization */
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+      .card {
+        padding: 20px;
+      }
+      .card h3 {
+        font-size: 1.1em;
+      }
+      .card p {
+        font-size: 0.95em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav { gap: 10px; font-size: 0.9em; }
+      .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="mailto:featdiibs@gmail.com">Contact</a>
+  </nav>
+
+  <main>
+    <h1>My Projects</h1>
+    <div class="projects">
+
+      <div class="card">
+        <h3>Urban Heat Island Analysis in Guwahati</h3>
+        <p>
+          A study using Google Earth Engine and Landsat data to measure the urban heat island
+          effect and its relation to land cover and NDVI across different decades.
+        </p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Land Use and Land Cover Change Detection (Assam 1984–2024)</h3>
+        <p>
+          Decadal mapping of land cover changes using NDVI, NDWI, NDBI, and BSI indices
+          in Google Earth Engine for sustainable regional planning.
+        </p>
+        <a href="#">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Time-Series Climate Analysis (1980–2020)</h3>
+        <p>
+          Statistical analysis of air temperature, precipitation, and humidity using SPSS
+          ARIMA models to understand long-term climate patterns.
+        </p>
+        <a href="#">View Project</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Dibyajyoti Deka | Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
