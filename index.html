@@ -22,7 +22,33 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 80px 20px 40px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffecf0;
     }
 
     img {
@@ -89,14 +115,21 @@
       h2 { font-size: 1.1em; }
       p { font-size: 1em; }
       img { width: 120px; height: 120px; }
+      nav { gap: 15px; font-size: 0.9em; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <!-- 👇 Replace the src link below with your own profile photo URL -->
-    <img src="https://raw.githubusercontent.com/featdiibs/featdiibs.github.io/main/Photo.jpg" alt="Dibyajyoti Deka">
+  <!-- 🌐 Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="mailto:featdiibs@gmail.com">Contact</a>
+  </nav>
 
+  <main>
+    <img src="https://raw.githubusercontent.com/featdiibs/featdiibs.github.io/main/Photo.jpg" alt="Dibyajyoti Deka">
     <h1>Dibyajyoti Deka</h1>
     <h2>Geography Researcher | GIS Enthusiast | Climate Studies Learner</h2>
 
@@ -112,7 +145,7 @@
       geography for real-world impact.
     </p>
 
-    <a href="featdiibs@gmail.com" class="btn">Contact Me</a>
+    <a href="mailto:featdiibs@gmail.com" class="btn">Contact Me</a>
   </main>
 
   <footer>
@@ -120,4 +153,3 @@
   </footer>
 </body>
 </html>
-
