@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Dibyajyoti Deka</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: "Poppins", Arial, sans-serif;
@@ -15,10 +19,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 80px 20px 40px;
+      padding: 90px 20px 50px;
       text-align: center;
     }
 
+    /* Navigation Bar */
     nav {
       position: fixed;
       top: 0; left: 0;
@@ -27,8 +32,9 @@
       backdrop-filter: blur(8px);
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px 10px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       z-index: 100;
     }
@@ -37,110 +43,35 @@
       color: #fff;
       text-decoration: none;
       font-weight: 500;
+      font-size: 1em;
       transition: color 0.3s ease;
     }
 
     nav a:hover { color: #ffecf0; }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
+      font-size: 2.4em;
+      margin-bottom: 25px;
+      margin-top: 10px;
     }
 
+    /* Project Grid */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       gap: 25px;
       width: 100%;
       max-width: 1000px;
+      padding: 0 10px;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.12);
       padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease, background 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    .card h3 {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .card p {
-      font-size: 1em;
-      line-height: 1.5;
-      color: #f0f0f0;
-      margin-bottom: 15px;
-    }
-
-    .card a {
-      display: inline-block;
-      padding: 8px 18px;
-      background: #fff;
-      color: #c33764;
-      border-radius: 25px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .card a:hover {
-      background: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2em; }
-      nav { gap: 15px; font-size: 0.9em; }
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="mailto:featdiibs@gmail.com">Contact</a>
-  </nav>
-
-  <main>
-    <h1>My Projects</h1>
-    <div class="projects">
-
-      <div class="card">
-        <h3>Urban Heat Island Analysis in Guwahati</h3>
-        <p>
-          A study using Google Earth Engine and Landsat data to measure the urban heat island
-          effect and its relation to land cover and NDVI across different decades.
-        </p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="card">
-        <h3>Land Use and Land Cover Change Detection (Assam 1984–2024)</h3>
-        <p>
-          Decadal mapping of land cover changes using NDVI, NDWI, NDBI, and BSI indices
-          in Google Earth Engine for sustainable regional planning.
-        </p>
-        <a href="#">View Project</a>
-      </div>
-
-      <div class="card">
-        <h3>Time-Series Climate Analysis (1980–2020)</h3>
-        <p>
-          Statistical analysis
+      transform: tra
